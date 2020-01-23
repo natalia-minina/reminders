@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/dark_dark_grey_color"
+    tools:context=".ui.activities.NewReminderActivity">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/view_toolbar" />
+
+    <View
+        android:layout_below="@id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/elevation_h"
+        android:background="@drawable/dropshadow" />
+
+    <LinearLayout
+        android:layout_below="@id/toolbarLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.florent37.singledateandtimepicker.SingleDateAndTimePicker
+            android:layout_marginTop="@dimen/xlarge_offset"
+            android:layout_marginBottom="@dimen/xlarge_offset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:picker_cyclic="true"
+            app:picker_visibleItemCount="5"
+            app:picker_mustBeOnFuture="true"
+            app:picker_textSize="@dimen/xlarge_text_size"
+            app:picker_textColor="@color/white_color"
+            app:picker_selectedTextColor="@color/white_color"
+            app:picker_displayDays="true"
+            android:id="@+id/singleDateAndTimePicker" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_grey_color" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_marginTop="@dimen/app_item_big_offset"
+            android:layout_marginLeft="@dimen/app_item_offset"
+            android:layout_marginRight="@dimen/app_item_offset"
+            android:layout_marginBottom="@dimen/app_item_big_offset"
+            android:id="@+id/remindTV"
+            style="@style/AppOrangeButtonStyle"
+            android:text="@string/remind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

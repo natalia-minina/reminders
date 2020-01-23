@@ -1,0 +1,22 @@
+<resources>
+
+    <style name="AppDefaultTextStyle">
+        <item name="android:textColorHint">@color/dark_white_color</item>
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:textSize">@dimen/large_text_size</item>
+    </style>
+
+    <style name="AppDefaultBoldTextStyle" parent="@style/AppDefaultTextStyle">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <style name="AppDefaultItalicTextStyle" parent="@style/AppDefaultTextStyle">
+        <item name="android:fontFamily">@font/montserrat_italic</item>
+        <item name="fontFamily">@font/montserrat_italic</item>
+    </style>
+
+    <style name="AppSmallBoldTextStyle" parent="@style/AppDefaultBoldTextStyle">
+        <item name="android:textSize">@dimen/xxdefault_text_size</item>
+    </style>
+</resources>

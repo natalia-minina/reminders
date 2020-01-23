@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppMultiLineEditTextStyle" parent="@style/AppDefaultItalicTextStyle">
+        <item name="android:minLines">4</item>
+        <item name="android:background">@drawable/grey_rounded_background</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:inputType">textCapSentences|textMultiLine</item>
+        <item name="android:maxLength">@integer/max_edit_text_len</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:gravity">top|left</item>
+        <item name="android:padding">@dimen/xxmedium_offset</item>
+    </style>
+
+    <style name="AppOrangeButtonStyle" parent="@style/AppSmallBoldTextStyle">
+        <item name="android:background">@drawable/orange_rounded_background</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/xxmedium_offset</item>
+        <item name="android:paddingBottom">@dimen/xxmedium_offset</item>
+    </style>
+
+</resources>

@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'com.google.gms.google-services'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.example.reminders"
+        minSdkVersion 17
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+
+    //MVP
+    implementation 'com.github.moxy-community:moxy:1.0.13'
+    kapt 'com.github.moxy-community:moxy-compiler:1.0.13'
+    implementation 'com.github.moxy-community:moxy-app-compat:1.0.13'
+
+    //RX
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.1'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+
+    //Depency Injection
+    kapt 'com.google.dagger:dagger-compiler:2.25.4'
+    implementation 'com.google.dagger:dagger:2.25.4'
+
+    //SingleDateAndTimePicker
+    implementation 'com.github.florent37:singledateandtimepicker:2.1.5'
+
+    //firebase
+    implementation 'com.google.firebase:firebase-analytics:16.5.0'
+    implementation 'com.google.firebase:firebase-database:17.0.0'
+    implementation 'com.firebaseui:firebase-ui-database:5.0.0'
+}

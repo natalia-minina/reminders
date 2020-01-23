@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Напоминания</string>
+    <string name="empty_message">У вас пока нет напоминаний.\nСоздайте первое!</string>
+    <string name="new_reminder">Новое напоминание</string>
+    <string name="reminder_text">Текст напоминания</string>
+    <string name="next">Далее</string>
+    <string name="enter_text">Введите текст</string>
+    <string name="remind">Напомнить</string>
+    <string name="in_">в</string>
+    <string name="today">сегодня</string>
+    <string name="error">Произошла ошибка</string>
+    <string name="reminder">Напоминание</string>
+</resources>

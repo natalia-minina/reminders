@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dark_dark_grey_color"
+    tools:context=".ui.activities.NewReminderActivity">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/view_toolbar" />
+
+    <View
+        android:layout_below="@id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/elevation_h"
+        android:background="@drawable/dropshadow" />
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/app_item_offset"
+        android:layout_marginRight="@dimen/app_item_offset"
+        android:layout_below="@id/toolbarLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/textET"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/app_item_big_offset"
+            android:layout_marginBottom="@dimen/app_item_big_offset"
+            android:hint="@string/reminder_text"
+            style="@style/AppMultiLineEditTextStyle" />
+
+        <TextView
+            android:layout_marginBottom="@dimen/app_item_big_offset"
+            android:id="@+id/nextTV"
+            style="@style/AppOrangeButtonStyle"
+            android:text="@string/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
